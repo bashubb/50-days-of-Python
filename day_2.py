@@ -1,3 +1,11 @@
+# 2nd day:
+# basic chalange: convert and sum
+'''
+function called convert_add that takes a list of strings as an argument, 
+converts them to integers, and sums the list. For example, ["1,", "3", "5"] 
+should be converted to [1, 3, 5] and summed to 9.
+'''
+
 def convert_add(list: list):
     converted_list = [int(item) for item in list]
     print(converted_list)
@@ -5,7 +13,15 @@ def convert_add(list: list):
     for item in converted_list:
         sum += item
     return  sum
- 
+
+
+# extra challange: check duplicates
+'''
+function called convert_add that takes a list of strings as an argument, converts them to integers, 
+and sums the list. For example, ["1,", "3", "5"] should be converted to [1, 3, 5] and summed to 9.
+'''
+
+
 def check_duplicates(collection: list):
     no_duplicates = []
     duplicates = []
@@ -34,9 +50,3 @@ if __name__ == "__main__":
 
     print(check_duplicates(fruits))
     print(check_duplicates(names))
-
-
-
-
-
-
