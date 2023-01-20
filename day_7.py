@@ -12,6 +12,9 @@ def string_range(number: list):
 
 #Extra challange:
 '''
+There is given a list of names, and you are asked to write a code 
+that returns all the names that start with "S." Your code should
+return a dictionary of all the names that start with S and how many times they appear in the dictionary.
 '''
 
 def dictonary_of_names(collection: list):
