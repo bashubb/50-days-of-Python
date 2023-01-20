@@ -27,12 +27,13 @@ def find_lowercase(collection: list):
     lower_case_list.sort(reverse= True)
     return tuple(lower_case_list)
 
-names = ["kerry", "dickson", "John", "Mary", 
-         "carol", "Rose", "adam"]
 
 
-register = {'Michael':'yes','John': 'no', 
-            'Peter':'yes', 'Mary': 'yes'}
+if __name__ == "__main__":
+    names = ["kerry", "dickson", "John", "Mary", 
+            "carol", "Rose", "adam"]
+    register = {'Michael':'yes','John': 'no', 
+                'Peter':'yes', 'Mary': 'yes'}
 
-print(register_check(register))
-print(find_lowercase(names))
+    print(register_check(register))
+    print(find_lowercase(names))
