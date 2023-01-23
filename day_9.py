@@ -12,6 +12,7 @@ def biggest_odd(number_string: str):
 
     return f'The biggest number from {number_string} converted to the list and filtered to odd numbers only {odds} is {biggest}'  
 
+
 #Extra challange:
 '''
 function called zeros_last. This function takes a list as an argument. 
@@ -21,18 +22,15 @@ the function should return the original list sorted in ascending order.
 '''
 
 def zeros_last(collection: list):
-    counter_of_zero = collection.count(0)
+    collection.sort()
     if 0 in collection:
-        for number in collection:
-            if number == 0:
-                collection.remove(number)
-        sorted_collection = sorted(collection)
-        for number in range(counter_of_zero):
-            sorted_collection.append(0)
-        return sorted_collection
-    else:
-        collection.sort()
-        return collection
+        number_of_zeros = collection.count(0)   
+        for i in range(number_of_zeros):
+            collection.remove(0)
+            collection.append(0)
+        
+    return collection
+    
 
 if __name__ == '__main__':
 
