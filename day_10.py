@@ -34,7 +34,7 @@ def thousand_separator(collection: list):
 
 if __name__ == '__main__':
 
-    print(hide_password())
+    print(hide_password()) # first program  output
 
-    example = [1000000, 2356989, 2354672, 9878098]
+    example = [1000000, 2356989, 2354672, 9878098] # second program output
     print(thousand_separator(example))
