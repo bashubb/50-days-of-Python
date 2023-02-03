@@ -39,10 +39,11 @@ def enter_teacher_name():
 def enter_number_of_periods():
     while True:
         try:
-            number_of_periods = int(input('\nPlease enter number of periods taught in the month: '))
-            break
+            number_of_periods = int(input('\nPlease enter number of periods taught in the month: '))  
         except ValueError:
             print('\nUse numbers to enter the value of periods ')
+        break
+        
     
     return number_of_periods
 
@@ -55,9 +56,11 @@ def enter_rate(rate=20):
         else:
             while True:
                 try:
-                    rate = int(input('\nPlease enter number of periods taught in the month: '))
+                    rate = int(input('\nPlease enter new rate '))
+                    break
                 except ValueError:
-                    print('\nUse numbers to enter the value of periods ')
+                    print('\nUse numbers to enter the rate ')
+                
     
     return rate
 
