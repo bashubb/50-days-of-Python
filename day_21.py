@@ -19,7 +19,12 @@ If there is no even number in the list, the code should return the average of al
 
 def even_or_average():
     numbers = [int(input()) for x in range(5)]
-    return numbers
+    even_numbers = [x for x in numbers if x % 2 == 0]
+    if even_numbers :
+        return max(even_numbers)
+    else:
+        return sum(numbers) / len(numbers)
+    
 
 
 if __name__ == '__main__':
