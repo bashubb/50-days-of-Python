@@ -23,12 +23,7 @@ The list output should not have duplicates.
 '''
 
 def unpack(collection: list):
-    no_duplicates = []
-    for element in collection:
-        for number in element:
-            if number not in no_duplicates:
-                no_duplicates.append(number) 
-    return no_duplicates
+   pass
 
 
 if __name__ == '__main__':

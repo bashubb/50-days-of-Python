@@ -68,8 +68,8 @@ def how_long_the_snake(): #takes lenght of the snake from user
 
     return len_of_snake
 
-def print_snake(number): #prints the snake
 
+def print_snake(number): #prints the snake
     print('loading')
     for _ in range(5):
         time.sleep(1)
@@ -83,10 +83,7 @@ def python_snakes():
     welcome('python_snake')
     print_snake(how_long_the_snake())
     
-    
 
-
- 
 
 
 if __name__ == '__main__':

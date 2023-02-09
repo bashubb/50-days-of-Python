@@ -37,7 +37,7 @@ def prime_numbers():
 
 
 if __name__ == '__main__':
-
+    
     example = [1, 2, 4, 6]
     print(odd_even(example))
     print(prime_numbers())

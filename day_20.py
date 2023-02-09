@@ -20,9 +20,8 @@ Your code should return a list of the words. Each word in the list should be rev
 Here is how your output should look: ['gninrAel', 'tUb', 'uoY', 'yLppa', 'flesRuoy', 'eVeihca']
 '''
 def reversed_list (sentence: str):
-    list_of_upper = [word[::-1] for word in sentence.split() if any(letter.isupper() for letter in word)]
-    
-    return list_of_upper
+    reversed_list_of_upper = [word[::-1] for word in sentence.split() if any(letter.isupper() for letter in word)]
+    return reversed_list_of_upper
 
 if __name__ == '__main__':
 

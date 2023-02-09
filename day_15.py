@@ -45,7 +45,7 @@ def enter_name(): # asks user for name
     return name.lower()
 
 
-def check_if_exists(name, data):
+def check_if_exists(name, data): # checks if name in data base
     if name in data:
         return True
     return False

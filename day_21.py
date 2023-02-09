@@ -26,12 +26,12 @@ def even_or_average():
         return sum(numbers) / len(numbers)
     
 
-
 if __name__ == '__main__':
 
     #execution basic
     a = [1,2,3,4]
     b = [5,6,7,8]
-
     print(make_tuples(a, b))
+
+    #execute extra challange
     print(even_or_average())

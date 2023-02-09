@@ -31,11 +31,6 @@ def sort_length (collection: list):
     return collection
 
 
-            
-
-
-
-
 if __name__ == '__main__':
 
     #execution basic
