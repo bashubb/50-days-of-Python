@@ -78,10 +78,10 @@ def main():
     while answer.lower() != 'no':
         numbers = enter_numbers()
         operation = choose_operation()
-        if operation == 'zero_division':
+        result = calculate(numbers, operation)
+        if result == 'zero_division':
             print('Please try to enter numbers and operation once again, please remember - do not divide by zero!')
             continue
-        result = calculate(numbers, operation)
         print(f'Result of {numbers[0]} {operation} {numbers[1]} is {result}')
         answer = yes_no()
     print('I hope You have fun! bye bye')
