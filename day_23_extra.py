@@ -19,7 +19,7 @@ def multiply_words(sentence: str):
     for word in list_of_words:
         if word.islower():
             list_of_lenght.append(len(word))
-    print(list_of_lenght)
+    
     sum = 1
     for i in list_of_lenght:
         sum *= i
