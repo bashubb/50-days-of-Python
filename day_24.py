@@ -7,6 +7,7 @@ and once they hit "done," it should calculate and return the average intake.
 '''
 import time
 
+
 def average_calories():
     while True:
         try:
