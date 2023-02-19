@@ -29,7 +29,26 @@ def average_calories():
 
     print(f'The Average calories per day is {calorie_intake / number_of_days}')
 
+#extra challange:
+'''
+a function called nested_lists that takes any number of lists and creates 
+a 2-dimensional nested list of lists. For example, if you pass the following 
+lists as arguments: [1, 2, 3, 5], [1, 2, 3, 4], [1, 3, 4, 5]. 
+Your code should return: [[1, 2, 3, 5], [1, 2, 3, 4], [1, 3, 4, 5]]
+'''
+
+def nestetd_list(*collections):
+    return [collection for collection in collections]
 
 if __name__ == '__main__':
+
+    #executing basic 
     average_calories()
+
+    #executin extra
+    first = [1, 2, 3, 5]
+    second = [1, 2, 3, 4]
+    third = [1, 3, 4, 5]
+
+    print(nestetd_list(first, second, third))
     
