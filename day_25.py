@@ -15,6 +15,21 @@ def all_the_same(collection):
     if counter != 0:
         return False
     return True
+    
+
+# extra challange:
+'''
+str1 = "the love is real"
+function called read_backwards that takes a string as an argument and reverses it. 
+the string above, for example, should return: "real is love the."
+'''
+
+def read_backwards(text: str):
+    list_text = text.split()
+    list_text.reverse()
+    reversed = ' '.join(list_text)
+    return reversed 
+
 
 if __name__ == '__main__':
 
@@ -29,3 +44,9 @@ if __name__ == '__main__':
     print(all_the_same(second_example))
     print(all_the_same(third_example))
     print(all_the_same(fourth_example))
+
+    #execute extra
+
+    str1 = "the love is real" 
+    print(read_backwards(str1))  # output: "real is love the"
+
