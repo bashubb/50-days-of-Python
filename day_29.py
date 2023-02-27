@@ -11,9 +11,18 @@ Your function should return "e" as the middle element. Whitespaces should be rem
 
 def middle_figure(first_word: str, second_word: str):
     new_word = (first_word + second_word).replace(' ', '')
-    if len(new_word) % 2 == 0:
-        middle_index = (len(new_word) / 2) - 1 
+    if len(new_word) % 2 != 0:
+        middle_index = (len(new_word) // 2)
         return new_word[middle_index]
     else:
         return 'no middle figure' 
+
+
+if __name__ == '__main__':
+
+    #execute basic:
+    example_string_1 = "make love" 
+    example_string_2 = "not wars"
+    print(middle_figure(example_string_1, example_string_2))    #output : "e"
+
     
