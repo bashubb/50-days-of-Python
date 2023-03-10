@@ -12,24 +12,22 @@ You will select the one that executes the fastest between lists and sets. Run th
 '''
 import datetime
 
-def binnary_search(collection, number_to_find):
-    now = datetime.datetime.now()
-    low = 0
-    high = len(collection) - 1
-    mid = 0
- 
-    while low <= high:
-        mid = (high + low) // 2
- 
-        if collection[mid] < number_to_find:
-            low = mid + 1
-        elif collection[mid] > number_to_find:
-            high = mid - 1
-        else:
+def search(collection, number_to_find):
+    if collection is type(list):
+        start = datetime.datetime.now()
+        if number_to_find in collection:
+            collection.index(number_to_find)
             end = datetime.datetime.now()
-            time_of_search = end - now
-            return mid ,time_of_search
- 
+    else:
+        start = datetime.datetime.now()
+        if number_to_find in collection:
+            for item in collection:
+                if item == number_to_find:
+                    end = datetime.datetime.now()
+                    break
+                    
+    time_of_search = end - start
+    return time_of_search
     
 
 def which_data_faster(range_of_numbers, number_to_find):
@@ -37,10 +35,11 @@ def which_data_faster(range_of_numbers, number_to_find):
     list_collection = list(numbers)
     set_collection = set(numbers)
 
-    set_time = binnary_search(set_collection, number_to_find)[1]
-    list_time = binnary_search(list_collection, number_to_find)[1]
+    list_time = search(list_collection, number_to_find)
+    set_time = search(set_collection, number_to_find)
+   
 
-    if set_time > list_time:
+    if set_time < list_time:
         fastest = f"set is fastest, it was {set_time} and list time was {list_time}" 
     else:
         fastest = f"list is fastest, it was {list_time} and set time was {set_time}"
@@ -52,3 +51,5 @@ if __name__ == '__main__':
 
     #execute:
     print(which_data_faster(5000, 23))
+    print(which_data_faster(10000000, 5433243))
+    print(which_data_faster(50231454100, 22345553))
