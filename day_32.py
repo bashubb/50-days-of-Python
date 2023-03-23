@@ -20,7 +20,7 @@ def welcome():
 
 
 def enter_password():
-    password = input('Please enter your password: ')
+    password = input('\nPlease enter your password: ')
     return password
 
 def valid_check():

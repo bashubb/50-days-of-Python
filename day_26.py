@@ -38,5 +38,5 @@ if __name__ == '__main__':
 
     #extra execution:
     s = 'Hi my name is Richard' 
-    print(string_lenght(s))
+    print(string_lenght(s)) # output : {'Hi': 2, 'my': 2, 'name': 4, 'is': 2, 'Richard': 7}
     
